@@ -1,0 +1,241 @@
+@import "_settings.scss";
+.catalogue_BuyButtom {
+    background-color: greenyellow;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1.2em;
+    text-decoration: yellow;
+    cursor: pointer;
+    &:hover {
+        background-color: green;
+      }
+  }
+
+  .catalogue_BuyButtom{
+    grid-row: 7/8;
+    grid-column: 6/7;
+    border: 0;
+    width: 80%;
+    cursor: pointer;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: green;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    &:hover {
+      background-color: greenyellow;
+    }
+    &:active {
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+.catalogue_ResetButtom {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1.2em;
+    text-decoration: yellow;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(221, 72, 72);
+      }
+  }
+
+  .catalogue_ResetButtom {
+    grid-row: 7/8;
+    grid-column: 5/6;
+    border: 0;
+    width: 80%;
+    line-height: 2.5;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: red;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    &:hover {
+      background-color: rgba(255, 0, 0, 0.822);
+    }
+    &:active {
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+  }
+  
+ 
+
+  .catalogue {
+    display: grid;
+    grid-row: 2/7;
+    grid-column: 1/7;
+    gap: 2rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    margin: 2rem;
+  }
+  .newElement,
+  .newElement-Unhover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr 0.3fr;
+    grid-column: span 1;
+    background-color: $accent1-color;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.425) 0.5rem 0.5rem;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.425) 0.3rem 0.3rem;
+    }
+  }
+
+  
+ 
+  
+  .ElementChecked {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr 0.3fr;
+    grid-column: span 1;
+    box-shadow: rgba(0, 0, 0, 0.425) 0.3rem 0.3rem;
+    background-color: $primary-color;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+  
+  .elementHide {
+    display: none;
+  }
+  
+  .anchorObject {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 1/3;
+  }
+  
+  .imageArticle {
+    grid-column: 1/5;
+    grid-row: 1/3;
+    width: 100%;
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+  
+  .Price {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  input[type=number]:disabled {
+    color: var(--accent2-color);
+    font-weight: bolder;
+  }
+  
+  .quantityInput {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    width: 60%;
+    height: 40%;
+    margin-top: 20%;
+    margin-left: 20%;
+    font-family: inherit;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-sizing: border-box;
+    font-size: large;
+    text-align: center;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .lessButton {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    /*position: absolute;*/
+    display: inline;
+    margin-left: 70%;
+    margin-top: 6.5%;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: xx-large;
+    box-sizing: border-box;
+    height: 8%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent1-color);
+  }
+  
+  .lessButtonChecked {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: inline;
+    margin-left: 70%;
+    margin-top: 6.5%;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: xx-large;
+    box-sizing: border-box;
+    height: 8%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+  }
+  
+  .addButton {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    /*position: absolute;*/
+    display: inline;
+    margin-left: -50%;
+    margin-top: 8%;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: xx-large;
+    box-sizing: border-box;
+    height: 8%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--backgroundElement);
+  }
+  
+  .addButtonChecked {
+    position: absolute;
+    display: inline;
+    margin-left: 0.2%;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: xx-large;
+    box-sizing: border-box;
+    height: 8%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+  }
+  
+.NameArticle{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    margin: 1rem;
+    font-size: large;
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+

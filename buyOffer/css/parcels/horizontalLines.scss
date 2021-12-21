@@ -1,0 +1,52 @@
+.hr {
+  float: left;
+  grid-row-start: 1;
+  width: 10%;
+}
+
+.hr_gray, .hr_gray2 {
+  border: 0.5em solid gray;
+  width: 100%;
+  margin-left: 20%;
+  grid-column: 1/4;
+}
+  
+  .hr_magenta,
+  .hr_cyan,
+  .hr_yellow,
+  .hr_black {
+    grid-row-start: 1;
+    grid-column: 5/6;
+  }
+
+.hr_black2,
+.hr_magenta2,
+.hr_cyan2,
+.hr_yellow2 {
+  grid-row: 8/9;
+  grid-column: 5/6;
+}
+
+.hr_gray2 {
+  grid-row: 8/9;
+}
+
+.hr_magenta, .hr_magenta2 {
+  border: 0.5em solid magenta;
+  margin-left: -30%;
+}
+
+.hr_cyan, .hr_cyan2 {
+  border: 0.5em solid cyan;
+  margin-left: -10%;
+}
+
+.hr_yellow, .hr_yellow2 {
+  border: 0.5em solid yellow;
+  margin-right: 53%;
+}
+
+.hr_black, .hr_black2 {
+  margin-right: 73%;
+  border: 0.5em solid black;
+}

@@ -1,0 +1,151 @@
+/*------------------------- ver ----------------------------------
+div.grid div > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: medium;
+  margin-left: 1.5em;
+  grid-row-start: 2;
+}
+
+div.grid p > span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+label#fname_error,
+label#lname_error,
+label#adress_error,
+label#phone_error,
+label#credit_card_error,
+label#exp_date_error,
+label#Radio_Error {
+  display: none;
+  color: red;
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+  grid-row-start: 4;
+  grid-column: 1/7;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  background-color: blanchedalmond;
+}
+
+section h2 {
+  align-items: center;
+  text-align: center;
+  grid-column: 1/13;
+  grid-row-start: 1;
+  color: rgb(36, 35, 35);
+}
+
+#purchase {
+  display: grid;
+  grid-column: 1/13;
+  grid-row: 2/13;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+}
+
+#purchase fieldset#personal_Info {
+  grid-row: 1/4;
+  grid-column: 1/13;
+}
+
+form#purchase ul {
+  gap: 0;
+}
+
+fieldset#personal_Info li:nth-child(1) {
+  grid-column: 1/6;
+  grid-row: 1/6;
+}
+
+fieldset#personal_Info li:nth-child(2) {
+  grid-column: 7/13;
+  grid-row: 1/6;
+}
+
+fieldset#personal_Info li:nth-child(3) {
+  grid-column: 1/6;
+  grid-row: 6/13;
+}
+
+fieldset#personal_Info li:nth-child(4) {
+  grid-column: 7/13;
+  grid-row: 6/13;
+}
+
+#purchase fieldset#Buy_Info {
+  grid-row: 4/8;
+  grid-column: 1/13;
+}
+
+fieldset#Buy_Info li:nth-child(1) {
+  grid-row: 1/13;
+  grid-column: 1/6;
+}
+
+fieldset#Buy_Info li:nth-child(2) {
+  grid-row: 1/13;
+  grid-column: 7/13;
+}
+
+#purchase fieldset#Card_Info {
+  grid-row: 8/12;
+  grid-column: 1/13;
+}
+
+fieldset#Card_Info li:nth-child(1) {
+  grid-row: 1/12;
+  grid-column: 1/6;
+}
+
+fieldset#Card_Info li:nth-child(2) {
+  grid-row: 1/6;
+  grid-column: 7/13;
+}
+
+fieldset#Card_Info li:nth-child(3) {
+  grid-row: 7/12;
+  grid-column: 7/13;
+}
+
+label#Visa,
+label#Master,
+label#AmExp {
+  display: inline;
+}
+
+form#purchase label {
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+}
+
+legend {
+  text-align: center;
+  font-weight: bold;
+}
+
+form#purchase ul:hover {
+  background-color: rgb(247, 212, 160);
+}
+
+ul#finishPurchase {
+  display: grid;
+  grid-column: 1/13;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  align-items: center;
+}
+
+fieldset {
+  margin-bottom: 1.6em;
+}
+*/
+
+
+/*# sourceMappingURL=buyOffer.scss.map */

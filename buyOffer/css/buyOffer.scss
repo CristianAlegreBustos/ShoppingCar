@@ -1,0 +1,32 @@
+@import "parcels/settings.scss";
+@import "parcels/navigationBar.scss";
+@import "parcels/header.scss";
+
+.content {
+  display: grid;
+  max-width: 90%;
+  margin: 0 auto;
+  grid-auto-flow: dense;
+  grid-auto-rows: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+
+.main {
+  grid-column: 1/7;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, auto);
+  background-color: #00aae4;
+}
+
+@import "parcels/horizontalLines.scss";
+@import "parcels/catalogue.scss";
+@import "parcels/footer.scss";
+@import "parcels/windowsmodal.scss";
+[class*="link"]{
+  text-decoration: none;
+}
+
+
