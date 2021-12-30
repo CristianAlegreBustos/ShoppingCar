@@ -18,3 +18,10 @@ Also is worth to mention if you modify directly the .css files when you copile t
 Thank you. 
 
 
+THINKS TO DO. 
+
+Sig In or Sing Up: Send by email a confirmation when an account is created. Function to show or hide password. 
+
+From the website, add new items Creating new Objects in the Json File (Update inventory)
+
+
