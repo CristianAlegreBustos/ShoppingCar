@@ -11,7 +11,7 @@ var obj;
 
 function getData(){
     var req = new XMLHttpRequest();
-    req.open('GET', 'https://cristianalegrebustos.github.io/ShoppingCart/buyOffer/script/db.json', true); 
+    req.open('GET', 'https://cristianalegrebustos.github.io/ShoppingCart/db.json', true); 
     req.onreadystatechange = function () {
         if (req.readyState == 4 && req.status == 200) {
             obj = JSON.parse(req.responseText);
