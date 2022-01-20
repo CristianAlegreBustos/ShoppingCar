@@ -46,7 +46,7 @@ function display(obj){
         anchorImage.appendChild(divImage);
         const imageArticle=document.createElement("img");
         imageArticle.className="imageArticle";
-        imageArticle.src=`../images/${obj[i].Image}`;
+        imageArticle.src=`./images/${obj[i].Image}`;
         divImage.appendChild(imageArticle);
         //create the price
         const PriceElement=document.createElement("a");
