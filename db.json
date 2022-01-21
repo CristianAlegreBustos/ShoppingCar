@@ -1,19 +1,84 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "Supplies": [
+      {
+          "Tipo_de_Articulo": "Estampadora",
+          "Nombre": "Mug Stamping Machine",
+          "id": 0,
+          "Precio": 142.99,
+          "Stock": 50,
+          "Image": "MugStampMachine.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Estampadora",
+          "Nombre": "Soccer Ball Stamping Machine",
+          "id": 1,
+          "Precio": 221.25,
+          "Stock": 40,
+          "Image": "SoccerStampMachine.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Impresora",
+          "Nombre": "Silhoutte Cameo 4 ",
+          "id": 2,
+          "Precio": 299.46,
+          "Stock": 35,
+          "Image": "SilhoutteCameo4.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Promo",
+          "Nombre": "All In One Machine",
+          "id": 3,
+          "Precio": 999.99,
+          "Stock": 10,
+          "Image": "AllinOneMachine.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Estampadora",
+          "Nombre": "T-Shirt Stamp Machine",
+          "id": 4,
+          "Precio": 230.49,
+          "Stock": 35,
+          "Image": "TShirtStampMachine.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Estampadora",
+          "Nombre": "Plate Plotting Machine",
+          "id": 5,
+          "Precio": 270.35,
+          "Stock": 20,
+          "Image": "PlatePlottingMachine.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Vinilo Textil",
+          "Nombre": "Vinil Flourescente",
+          "id": 6,
+          "Precio": 29.99,
+          "Stock": 10,
+          "Image": "VinilFlouresente.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Estampadora",
+          "Nombre": "Cap Stamp Machine",
+          "id": 7,
+          "Precio": 78.99,
+          "Stock": 20,
+          "Image": "stamp_peakedCap.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Indumentaria",
+          "Nombre": "Remera ",
+          "id": 8,
+          "Precio": 20.99,
+          "Stock": 15,
+          "Image": "remera.jpg"
+      },
+      {
+          "Tipo_de_Articulo": "Indumentaria",
+          "Nombre": "Pantalon ",
+          "id": 9,
+          "Precio": 25.99,
+          "Stock": 16,
+          "Image": "Short.jpg"
+      }
+  ]
 }
