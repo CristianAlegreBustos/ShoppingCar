@@ -1,16 +1,104 @@
-var Articles;
-var ShoppingCar= [];
-var spanContador=document.getElementById("itemsNumber");
-var number=document.createTextNode(`${ShoppingCar.length}`);
-spanContador.appendChild(number);
-var search_button=document.getElementById("searchButton");
-var search_input=document.getElementById("searchbo");
-var reset_button=document.getElementById("ResetButtom");
-var buy_Button=document.getElementById("BuyButtom");
-var obj;
+    let Supplies= [
+        {
+            "Tipo_de_Articulo": "Estampadora",
+            "Nombre": "Mug Stamping Machine",
+            "id": 0,
+            "Precio": 142.99,
+            "Stock": 50,
+            "Image": "MugStampMachine.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Estampadora",
+            "Nombre": "Soccer Ball Stamping Machine",
+            "id": 1,
+            "Precio": 221.25,
+            "Stock": 40,
+            "Image": "SoccerStampMachine.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Impresora",
+            "Nombre": "Silhoutte Cameo 4 ",
+            "id": 2,
+            "Precio": 299.46,
+            "Stock": 35,
+            "Image": "SilhoutteCameo4.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Promo",
+            "Nombre": "All In One Machine",
+            "id": 3,
+            "Precio": 999.99,
+            "Stock": 10,
+            "Image": "AllinOneMachine.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Estampadora",
+            "Nombre": "T-Shirt Stamp Machine",
+            "id": 4,
+            "Precio": 230.49,
+            "Stock": 35,
+            "Image": "TShirtStampMachine.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Estampadora",
+            "Nombre": "Plate Plotting Machine",
+            "id": 5,
+            "Precio": 270.35,
+            "Stock": 20,
+            "Image": "PlatePlottingMachine.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Vinilo Textil",
+            "Nombre": "Vinil Flourescente",
+            "id": 6,
+            "Precio": 29.99,
+            "Stock": 10,
+            "Image": "VinilFlouresente.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Estampadora",
+            "Nombre": "Cap Stamp Machine",
+            "id": 7,
+            "Precio": 78.99,
+            "Stock": 20,
+            "Image": "stamp_peakedCap.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Indumentaria",
+            "Nombre": "Remera ",
+            "id": 8,
+            "Precio": 20.99,
+            "Stock": 15,
+            "Image": "remera.jpg"
+        },
+        {
+            "Tipo_de_Articulo": "Indumentaria",
+            "Nombre": "Pantalon ",
+            "id": 9,
+            "Precio": 25.99,
+            "Stock": 16,
+            "Image": "Short.jpg"
+        }
+    ]
 
+
+
+
+
+
+let Articles;
+let ShoppingCar= [];
+let spanContador=document.getElementById("itemsNumber");
+let number=document.createTextNode(`${ShoppingCar.length}`);
+spanContador.appendChild(number);
+let search_button=document.getElementById("searchButton");
+let search_input=document.getElementById("searchbo");
+let reset_button=document.getElementById("ResetButtom");
+let buy_Button=document.getElementById("BuyButtom");
+let obj;
+/*
 function getData(){
-    var req = new XMLHttpRequest();
+    let req = new XMLHttpRequest();
     req.open('GET', 'https://visual-inputs.glitch.me/db.json', true); 
     req.onreadystatechange = function () {
         if (req.readyState == 4 && req.status == 200) {
@@ -21,14 +109,14 @@ function getData(){
             }
         };
         req.send(null);
-}
+}*/
 
-
+display(Supplies);
 
 function display(obj){
     const catalogue=document.getElementById("catalogue");
     for(let i=0 ; i<obj.length; i++){
-        var NItem = 0;
+        let NItem = 0;
         const newElement= document.createElement("div");
         newElement.className="newElement";
         newElement.id=obj[i].id;
@@ -174,8 +262,8 @@ function addMayus(search_input){
     words= search_input.value.split(" ");
     words_capitalized = [];
     for (let i=0; i<words.length; i++){
-        var firstLetter = words[i].slice(0,1);
-        var capitalized = words[i].replace(firstLetter,firstLetter.toUpperCase());
+        let firstLetter = words[i].slice(0,1);
+        let capitalized = words[i].replace(firstLetter,firstLetter.toUpperCase());
         words_capitalized.push(capitalized);
     }
     search_input.value=words_capitalized.join(" ");
